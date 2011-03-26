@@ -1,0 +1,23 @@
+Options -Indexes +Includes +SymLinksIfOwnerMatch
+XBitHack full
+
+RedirectMatch permanent ^/dragsort.* http://tool-man.org/examples/sorting.html
+
+RewriteEngine on
+
+# OpenID
+RewriteCond %{HTTP_HOST}   ^tim\.tool-man\.org [NC]
+RewriteRule ^$             /openid/tim.html [PT,L]
+
+#
+# poor man's domain canonicalization
+#
+RewriteCond %{HTTP_HOST}   ^www\.tool-man\.org [NC]
+RewriteCond %{HTTP_HOST}   !^$
+RewriteRule ^$             http://tool-man.org/ [L,R,NS]
+RewriteCond %{HTTP_HOST}   ^www\.tool-man\.org [NC]
+RewriteCond %{HTTP_HOST}   !^$ 
+RewriteRule ^(.*)\.html    http://tool-man.org/$1 [L,R,NS]
+RewriteCond %{HTTP_HOST}   ^www\.tool-man\.org [NC]
+RewriteCond %{HTTP_HOST}   !^$
+RewriteRule ^(.*)$         http://tool-man.org/$1 [L,R,NS]

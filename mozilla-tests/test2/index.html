@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>background-image overflow - test2</title>
+        <link rel="Stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+		<p>This is the BODY...it has a nice leaf background</p>
+
+        <div id="header">
+            this is the page header, navigation probably goes here.
+        </div>
+
+        <div id="body" style="border: solid black; margin: 2em; padding: 1em;">
+            <h1>LINK'ed CSS</h1>
+
+            <p>This is the main content.  It has a cute watermark background.  
+            The HTML uses a LINKed stylesheet containing the
+            following:</p>
+<pre>
+body { background-image: url(http://tool-man.org/mozilla-tests/test2/leaf-2-detroit.gif); }
+#body { background-image: url(http://tool-man.org/mozilla-tests/test2/smiling-watermark-1.gif); }
+</pre>
+
+            <p>The body background is a 200x200 pixel tiled leaf pattern.
+            This &quot;body&quot; DIV&#39;s background is a 737x917 pixel
+            watermark.</p>
+
+            <h2>Reproducing the bug</h2>
+
+            <p>Hit the reload button (literally hit the reload button, Ctrl-R
+            reproduces the bug less often). Assuming you are on fast
+            connection, the watermark "bleeds" below and to the right of this
+			DIV's borders.  Try copying this files to a local server to
+			achieve a fast connection.</p>
+
+			<p>Try this same page, but with <a href="inline.html">inline CSS</a> (&lt;-- you can keep clicking on this link and never reproduce the bug)</p>
+
+			<p>Now use the forward and back buttons.  This sometimes
+			reproduces the bug, but only when going back or forward to the LINK'ed CSS page.</p>
+
+        </div>
+
+        <div id="footer">
+            this is the page footer.  Administrivia and page maintainer go here.
+        </div>
+    </body>
+</html>
+
