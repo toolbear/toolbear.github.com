@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/toolbear
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://toolbear.io
+  * I am toolbear (https://keybase.io/toolbear) on keybase.
+  * I have a public key ASCtvHAoZ0o4PNMpi8zIKHMKxeuuzr71dWns-wCAPvdgkwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017ecb47393cd41249fb6690cde9619a81279a93188a4dd24e8b672ce5c3b7c92c0a",
+            "host": "keybase.io",
+            "kid": "0120adbc7028674a383cd3298bccc828730ac5ebaecebef57569ecfb00803ef760930a",
+            "uid": "2dd33ba627f7f737e643103b80312400",
+            "username": "toolbear"
+        },
+        "service": {
+            "hostname": "toolbear.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.15"
+    },
+    "ctime": 1463398462,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1463398435,
+        "hash": "7bd51efd55402780aa1f8cd9408ca1a92fe7af9912f1ecf416c375414609d0ba4b832aa1e3f2791314288433998b6662f8ddbf2958dd0780bd252907dbaf7eb5",
+        "seqno": 464628
+    },
+    "prev": "a516ea5be4d149824d00e66a5c0ca0f7c8317ce164169a0fbf231eed2232ae10",
+    "seqno": 44,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgrbxwKGdKODzTKYvMyChzCsXrrs6+9XVp7PsAgD73YJMKp3BheWxvYWTFAvR7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxN2VjYjQ3MzkzY2Q0MTI0OWZiNjY5MGNkZTk2MTlhODEyNzlhOTMxODhhNGRkMjRlOGI2NzJjZTVjM2I3YzkyYzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYWRiYzcwMjg2NzRhMzgzY2QzMjk4YmNjYzgyODczMGFjNWViYWVjZWJlZjU3NTY5ZWNmYjAwODAzZWY3NjA5MzBhIiwidWlkIjoiMmRkMzNiYTYyN2Y3ZjczN2U2NDMxMDNiODAzMTI0MDAiLCJ1c2VybmFtZSI6InRvb2xiZWFyIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ0b29sYmVhci5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE1In0sImN0aW1lIjoxNDYzMzk4NDYyLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NjMzOTg0MzUsImhhc2giOiI3YmQ1MWVmZDU1NDAyNzgwYWExZjhjZDk0MDhjYTFhOTJmZTdhZjk5MTJmMWVjZjQxNmMzNzU0MTQ2MDlkMGJhNGI4MzJhYTFlM2YyNzkxMzE0Mjg4NDMzOTk4YjY2NjJmOGRkYmYyOTU4ZGQwNzgwYmQyNTI5MDdkYmFmN2ViNSIsInNlcW5vIjo0NjQ2Mjh9LCJwcmV2IjoiYTUxNmVhNWJlNGQxNDk4MjRkMDBlNjZhNWMwY2EwZjdjODMxN2NlMTY0MTY5YTBmYmYyMzFlZWQyMjMyYWUxMCIsInNlcW5vIjo0NCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEDIq5xognGu/NL2zmivIo/7qcyA6v9BYYF/WhhFpxir1n6TG/EWRBQ7Pop7z7HgGJ+c3wh6pnaULo57Zx6lgu8PqHNpZ190eXBlIKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/toolbear
+
+==================================================================
