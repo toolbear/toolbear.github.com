@@ -298,15 +298,18 @@ ls-long,
   overflow: hidden;
 }
 #avatar .avatar {
-  display: inline-block;
+  display: none;
   width: 290px;
   height: 290px;
-  background-image: url(images/avatar-290x290.jpg);
-  background-image: -webkit-image-set(url(images/avatar-290x290.jpg) 1x, url(images/avatar-580x580.jpg) 2x);
   background-size: cover;
 }
+#avatar .gravatar {
+  display: inline-block;
+  background-image: url(images/avatar-290x290.jpg);
+  background-image: -webkit-image-set(url(images/avatar-290x290.jpg) 1x, url(images/avatar-580x580.jpg) 2x);
+}
 @media (min-width: 375px) {
-  #avatar .avatar {
+  #avatar .gravatar {
     width: 345px;
     height: 345px;
     background-image: url(images/avatar-345x345.jpg);
@@ -314,7 +317,7 @@ ls-long,
   }
 }
 @media (min-width: 414px) {
-  #avatar .avatar {
+  #avatar .gravatar {
     width: 384px;
     height: 384px;
     background-image: url(images/avatar-384x384.jpg);
@@ -322,11 +325,33 @@ ls-long,
   }
 }
 @media (min-width: 480px) {
-  #avatar .avatar {
+  #avatar .gravatar {
     width: 450px;
     height: 450px;
     background-image: url(images/avatar-450x450.jpg);
     background-image: -webkit-image-set(url(images/avatar-450x450.jpg) 1x, url(images/avatar-900x900.jpg) 2x);
+  }
+}
+@media (orientation: landscape), (min-width: 736px) {
+  #avatar .avatar {
+    display: inline-block;
+  }
+  #avatar .avatar:nth-child(odd) {
+    margin-right: 8px;
+  }
+}
+@media (orientation: landscape) {
+  #avatar .avatar {
+    width: 220px;
+    height: 220px;
+  }
+  #avatar .gravatar {
+    background-image: url(images/avatar-290x290.jpg);
+    background-image: -webkit-image-set(url(images/avatar-290x290.jpg) 1x, url(images/avatar-580x580.jpg) 2x);
+  }
+  #avatar .keybase {
+    background-image: url(images/toolbear-220x220.png);
+    background-image: -webkit-image-set(url(images/toolbear-220x220.png) 1x, url(images/toolbear-440x440.png) 2x);
   }
 }
 @media (min-width: 568px) {
@@ -336,11 +361,20 @@ ls-long,
   body {
     max-width: 538px;
   }
-  #avatar .avatar {
+  #avatar .gravatar {
     width: 538px;
     height: 538px;
     background-image: url(images/avatar-538x538.jpg);
     background-image: -webkit-image-set(url(images/avatar-538x538.jpg) 1x, url(images/avatar-1076x1076.jpg) 2x);
+  }
+}
+@media (min-width: 568px) and (orientation: landscape) {
+  #avatar .avatar {
+    width: 264px;
+    height: 264px;
+  }
+  #avatar .keybase {
+    background-image: url(images/toolbear-486x486.png);
   }
 }
 @media (min-width: 667px) {
@@ -350,7 +384,7 @@ ls-long,
   body {
     max-width: 637px;
   }
-  #avatar .avatar {
+  #avatar .gravatar {
     width: 637px;
     height: 637px;
     background-image: url(images/avatar-637x637.jpg);
@@ -368,6 +402,16 @@ ls-long,
     display: none;
   }
 }
+@media (min-width: 667px) and (orientation: landscape) {
+  #avatar .avatar {
+    width: 313px;
+    height: 313px;
+  }
+  #avatar .keybase {
+    background-image: url(images/toolbear-486x486.png);
+  }
+}
+
 @media (min-width: 736px) {
   html {
     min-width: 736px;
@@ -377,10 +421,16 @@ ls-long,
     margin: 0 auto;
   }
   #avatar .avatar {
-    width: 706px;
-    height: 706px;
-    background-image: url(images/avatar-706x706.jpg);
-    background-image: -webkit-image-set(url(images/avatar-706x706.jpg) 1x, url(images/avatar-1412x1412.jpg) 2x);
+    display: inline-block;
+    width: 345px;
+    height: 345px;
+  }
+  #avatar .gravatar {
+    background-image: url(images/avatar-345x345.jpg);
+    background-image: -webkit-image-set(url(images/avatar-345x345.jpg) 1x, url(images/avatar-690x690.jpg) 2x);
+  }
+  #avatar .keybase {
+    background-image: url(images/toolbear-486x486.png);
   }
 }
 </style>
@@ -410,17 +460,18 @@ Take over the world.
 <section id="identities">
 <term-prompt>ls <ls-long>-l </ls-long>identities</term-prompt>
 <ul class="ls">
-  <li><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>github  ➝ <a class="url" href="//github.com/toolbear">toolbear</a></li>
-  <li><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>twitter ➝ <a class="url" href="//twitter.com/toolbear74">@toolbear74</a></li>
-  <li><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>pgp     ➝ <a class="url" href="//keybase.io/toolbear">keybase.io/toolbear</a></li>
-  <li><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>ssh     ➝ <a href="/toolbear.pub">toolbear.pub</a></li>
+  <li class="github" ><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>github  ➝ <a class="url" href="//github.com/toolbear">toolbear</a></li>
+  <li class="twitter"><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>twitter ➝ <a class="url" href="//twitter.com/toolbear74">@toolbear74</a></li>
+  <li class="cv"     ><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>cv      ➝ <a class="url" href="//stackoverflow.com/cv/toolbear">programming @ earth</a></li>
+  <li class="keybase"><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>pgp     ➝ <a class="url" href="//keybase.io/toolbear">keybase.io/toolbear</a></li>
+  <li class="ssh"    ><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>ssh     ➝ <a href="/toolbear.pub">toolbear.pub</a></li>
 </ul>
 </section>
 
 <section id="avatar">
 <term-prompt class="curl">curl <a href="//gravatar.com/toolbear74">https://gravatar.com/avatar/61a342d63d03921e1b5ba8e079a2d649</a></term-prompt>
 <term-prompt class="cat">cat avatar.jpg</term-prompt>
-<a class="url avatar" title="my gravatar" href="//gravatar.com/toolbear74"></a>
+<a class="url avatar gravatar" title="toolbear's gravatar" href="//gravatar.com/toolbear74"></a><a class="url avatar keybase" title="toolbear @ keybase" href="//keybase.io/toolbear"></a>
 </section>
 
 <footer>
