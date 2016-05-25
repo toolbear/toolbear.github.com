@@ -209,6 +209,8 @@ html {
   background-color: #f7f3f7;
   font-family: 'Source Code Pro', monospace;
   -webkit-text-size-adjust: none;
+  min-width: 320px;
+  min-height: 320px;
 }
 body {
   padding: 0 1em;
@@ -249,9 +251,12 @@ finger-plan>h1 {
 term-finger,
 finger-project,
 finger-plan,
-body>section>div,
-.ls>li {
+body>section>div {
   white-space: pre-wrap;
+}
+.ls>li {
+  white-space: pre;
+  overflow: hidden;
 }
 tb-haiku {
   font-weight: 300;
@@ -340,7 +345,7 @@ ls-long,
     margin-right: 8px;
   }
 }
-@media (orientation: landscape) {
+@media (min-width: 480px) and (orientation: landscape) {
   #avatar .avatar {
     width: 220px;
     height: 220px;
