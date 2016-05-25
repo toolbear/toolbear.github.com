@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Tim Taylor aka toolbear</title>
+<meta name="google-site-verification" content="xzKCTu31mw6ULqJsEwc76gri9wcmRfyZ7Tc9Zvh7hg0" />
+<link rel="canonical" href="https://toolbear.io/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#7b59c0">
+<meta name="apple-mobile-web-app-title" content="toolbear">
+<meta name="application-name" content="toolbear">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+<meta name="theme-color" content="#f7f3f7">
+<style type="text/css">
+/* Source Code Pro — https://github.com/adobe-fonts/source-code-pro/releases/latest */
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-ExtraLight.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-ExtraLight.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 200;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-ExtraLightIt.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-ExtraLightIt.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-Light.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-Light.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-LightIt.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-LightIt.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-Regular.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-Regular.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-It.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-It.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-Medium.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-Medium.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-MediumIt.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-MediumIt.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-Semibold.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-Semibold.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-SemiboldIt.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-SemiboldIt.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-Bold.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-Bold.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-BoldIt.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-BoldIt.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-Black.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-Black.otf.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Source Code Pro';
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('fonts/SourceCodePro-BlackIt.ttf.woff2') format('woff2'),
+         url('fonts/SourceCodePro-BlackIt.otf.woff') format('woff');
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 15px;
+  font-weight: 400;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom */
+html {
+  color: #1b181b;
+  background-color: #f7f3f7;
+  font-family: 'Source Code Pro', monospace;
+  -webkit-text-size-adjust: none;
+  min-width: 320px;
+  min-height: 320px;
+}
+body {
+  padding: 0 1em;
+  line-height: 1.3;
+  margin-top: 1em
+  position: relative;
+}
+body::after {
+  display: block;
+  margin: 1em auto;
+  margin-top: 5em;
+  width: 3em;
+  content: "🐻";
+}
+body>header,
+body>section,
+body>footer,
+body>header>tb-haiku {
+  margin-top: 1em;
+}
+
+h1 {
+  display: inline;
+}
+h1::after {
+  content: " ";
+}
+finger-plan>h1::after {
+  content: "";
+}
+
+term-prompt,
+tb-haiku,
+finger-plan>h1 {
+  display: block;
+  white-space: pre;
+}
+term-finger,
+finger-project,
+finger-plan,
+body>section>div {
+  white-space: pre-wrap;
+}
+.ls>li {
+  white-space: pre;
+  overflow: hidden;
+}
+tb-haiku {
+  font-weight: 300;
+}
+
+term-prompt {
+  display: block;
+  color: #695d69;
+  color: #776977;
+}
+term-prompt::before {
+  content: "❯ ";
+  font-weight: 900;
+}
+finger-project>project-description::before {
+  content: " — ";
+}
+
+h1,
+term-prompt {
+  font-weight: 500;
+}
+a, a:link {
+  text-decoration: none;
+  color: #516aec;
+}
+a:visited {
+  color: #7b59c0;
+}
+a:hover {
+  text-decoration: underline;
+}
+cite {
+  white-space: nowrap;
+}
+
+dt-datetime>dt-dow, dt-time>dt-second,
+finger-project>project-description,
+ls-long,
+#avatar>.curl {
+  display: none;
+}
+#avatar>.curl {
+  overflow: hidden;
+}
+#avatar .avatar {
+  display: none;
+  width: 290px;
+  height: 290px;
+  background-size: cover;
+}
+#avatar .gravatar {
+  display: inline-block;
+  background-image: url(images/avatar-290x290.jpg);
+  background-image: -webkit-image-set(url(images/avatar-290x290.jpg) 1x, url(images/avatar-580x580.jpg) 2x);
+}
+@media (min-width: 375px) {
+  #avatar .gravatar {
+    width: 345px;
+    height: 345px;
+    background-image: url(images/avatar-345x345.jpg);
+    background-image: -webkit-image-set(url(images/avatar-345x345.jpg) 1x, url(images/avatar-690x690.jpg) 2x);
+  }
+}
+@media (min-width: 414px) {
+  #avatar .gravatar {
+    width: 384px;
+    height: 384px;
+    background-image: url(images/avatar-384x384.jpg);
+    background-image: -webkit-image-set(url(images/avatar-384x384.jpg) 1x, url(images/avatar-768x768.jpg) 2x);
+  }
+}
+@media (min-width: 480px) {
+  #avatar .gravatar {
+    width: 450px;
+    height: 450px;
+    background-image: url(images/avatar-450x450.jpg);
+    background-image: -webkit-image-set(url(images/avatar-450x450.jpg) 1x, url(images/avatar-900x900.jpg) 2x);
+  }
+}
+@media (orientation: landscape), (min-width: 736px) {
+  #avatar .avatar {
+    display: inline-block;
+  }
+  #avatar .avatar:nth-child(odd) {
+    margin-right: 8px;
+  }
+}
+@media (min-width: 480px) and (orientation: landscape) {
+  #avatar .avatar {
+    width: 220px;
+    height: 220px;
+  }
+  #avatar .gravatar {
+    background-image: url(images/avatar-290x290.jpg);
+    background-image: -webkit-image-set(url(images/avatar-290x290.jpg) 1x, url(images/avatar-580x580.jpg) 2x);
+  }
+  #avatar .keybase {
+    background-image: url(images/toolbear-220x220.png);
+    background-image: -webkit-image-set(url(images/toolbear-220x220.png) 1x, url(images/toolbear-440x440.png) 2x);
+  }
+}
+@media (min-width: 568px) {
+  html {
+    min-width: 568px;
+  }
+  body {
+    max-width: 538px;
+  }
+  #avatar .gravatar {
+    width: 538px;
+    height: 538px;
+    background-image: url(images/avatar-538x538.jpg);
+    background-image: -webkit-image-set(url(images/avatar-538x538.jpg) 1x, url(images/avatar-1076x1076.jpg) 2x);
+  }
+}
+@media (min-width: 568px) and (orientation: landscape) {
+  #avatar .avatar {
+    width: 264px;
+    height: 264px;
+  }
+  #avatar .keybase {
+    background-image: url(images/toolbear-486x486.png);
+  }
+}
+@media (min-width: 667px) {
+  html {
+    min-width: 667px;
+  }
+  body {
+    max-width: 637px;
+  }
+  #avatar .gravatar {
+    width: 637px;
+    height: 637px;
+    background-image: url(images/avatar-637x637.jpg);
+    background-image: -webkit-image-set(url(images/avatar-637x637.jpg) 1x, url(images/avatar-1274x1274.jpg) 2x);
+  }
+  dt-datetime>dt-dow, dt-time>dt-second,
+  finger-project>project-description,
+  ls-long {
+    display: inline;
+  }
+  #avatar>.curl {
+    display: block;
+  }
+  #avatar>.cat {
+    display: none;
+  }
+}
+@media (min-width: 667px) and (orientation: landscape) {
+  #avatar .avatar {
+    width: 313px;
+    height: 313px;
+  }
+  #avatar .keybase {
+    background-image: url(images/toolbear-486x486.png);
+  }
+}
+
+@media (min-width: 736px) {
+  html {
+    min-width: 736px;
+  }
+  body {
+    max-width: 706px;
+    margin: 0 auto;
+  }
+  #avatar .avatar {
+    display: inline-block;
+    width: 345px;
+    height: 345px;
+  }
+  #avatar .gravatar {
+    background-image: url(images/avatar-345x345.jpg);
+    background-image: -webkit-image-set(url(images/avatar-345x345.jpg) 1x, url(images/avatar-690x690.jpg) 2x);
+  }
+  #avatar .keybase {
+    background-image: url(images/toolbear-486x486.png);
+  }
+}
+</style>
+</head>
+<body id="home" class="vcard">
+
+<header>
+<term-prompt>ssh toolbear.io</term-prompt>
+<h1>Last login:</h1><dt-datetime><dt-dow>Fri </dt-dow><dt-month>May </dt-month><dt-dom> 6 </dt-dom><dt-time><dt-hour>11</dt-hour><dt-minute>:01</dt-minute><dt-second>:40</dt-second> </dt-time><dt-year>2016</dt-year></dt-datetime></div>
+<tb-haiku>Serenity can
+be found in simplicity.
+Bear hunts minima.</tb-haiku>
+</header>
+
+<section id="finger">
+<term-prompt>finger tim |head</term-prompt>
+<term-finger><h1>Name:</h1><span class="fn">Tim Taylor</span> aka <span class="nickname">toolbear</span>
+<h1>Email:</h1><a class="email" href="mailto:tim@toolbear.io">tim@toolbear.io</a>
+<h1>Description:</h1><span class="title">Programming Bear</span>
+<finger-project><h1>Project:</h1><project-name><a href="//github.com/toolbear/ballad">ballad</a></project-name><project-description>Given/When/Then in Java</project-description></finger-project>
+<finger-plan><h1>Plan:</h1>
+Take over the world.
+
+<a href="//blog.toolbear.io">…</a></finger-plan></term-finger>
+</section>
+
+<section id="identities">
+<term-prompt>ls <ls-long>-l </ls-long>identities</term-prompt>
+<ul class="ls">
+  <li class="github" ><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>github  ➝ <a class="url" href="//github.com/toolbear">toolbear</a></li>
+  <li class="twitter"><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>twitter ➝ <a class="url" href="//twitter.com/toolbear74">@toolbear74</a></li>
+  <li class="cv"     ><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>cv      ➝ <a class="url" href="//stackoverflow.com/cv/toolbear">programming @ earth</a></li>
+  <li class="keybase"><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>pgp     ➝ <a class="url" href="//keybase.io/toolbear">keybase.io/toolbear</a></li>
+  <li class="ssh"    ><ls-long>lrwxr-xr-x    1 toolbear  </ls-long>ssh     ➝ <a href="/toolbear.pub">toolbear.pub</a></li>
+</ul>
+</section>
+
+<section id="avatar">
+<term-prompt class="curl">curl <a href="//gravatar.com/toolbear74">https://gravatar.com/avatar/61a342d63d03921e1b5ba8e079a2d649</a></term-prompt>
+<term-prompt class="cat">cat avatar.jpg</term-prompt>
+<a class="url avatar gravatar" title="toolbear's gravatar" href="//gravatar.com/toolbear74"></a><a class="url avatar keybase" title="toolbear @ keybase" href="//keybase.io/toolbear"></a>
+</section>
+
+<footer>
+<term-prompt>logout</term-prompt>
+<ul class="farewell">
+  <li><blockquote>'Cause, remember: no matter where you go… there you are. <cite>— Buckaroo Banzai</cite></blockquote></li>
+</ul>
+</footer>
+
+</body>
+</html>
