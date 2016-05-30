@@ -18,6 +18,8 @@ github_username:  toolbear
 # Build settings
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
 
 # defaults
 defaults:
