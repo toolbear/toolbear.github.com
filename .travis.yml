@@ -1,3 +1,8 @@
 sudo: false
 
 script: cd blog && bundle exec jekyll build
+
+branches:
+  only:
+    - toolbear.io
+    - migrate-blog
