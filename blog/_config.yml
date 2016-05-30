@@ -18,3 +18,11 @@ github_username:  toolbear
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+# defaults
+defaults:
+- scope:
+    type: "posts"
+  values:
+    layout: "post"
+    author: "toolbear"
