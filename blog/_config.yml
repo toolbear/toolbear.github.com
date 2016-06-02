@@ -26,5 +26,6 @@ defaults:
 - scope:
     type: "posts"
   values:
-    layout: "post"
     author: "toolbear"
+    excerpt_separator: <!--more-->
+    layout: "post"

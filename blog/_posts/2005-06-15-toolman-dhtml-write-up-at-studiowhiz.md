@@ -1,0 +1,17 @@
+---
+title: ToolMan DHTML Write Up at StudioWhiz
+date: 2005-06-15 10:38:47.000000000 -07:00
+type: post
+published: true
+status: publish
+tags:
+- CSS
+- DHTML
+---
+Mr. K shared with me his [write up on my library and examples][1] posted
+at his site [StudioWhiz][2].  In addition to containing some nice ego-inflating
+compliments, Mr. K also has created his own edit-in-place and drag-and-drop
+examples linked to from his article.
+
+[1]: http://www.studiowhiz.com/forums/index.php?showtopic=7896
+[2]: http://www.studiowhiz.com/

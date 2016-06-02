@@ -12,6 +12,7 @@ tags:
 <pre><code>ToolMan.junkdrawer().serializeList(myList)
 </code></pre>
 <p>It returns a string representation of the list as described in the remainder of this post.</p>
+<!--more-->
 <hr />
 <p>Tim Erfle and several others have asked a question like the following:</p>
 <blockquote>
