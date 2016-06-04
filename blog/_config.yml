@@ -1,0 +1,31 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: streamofconsciousness
+email: tim@toolbear.io
+description: > # this means to ignore newlines until "baseurl:"
+  the pitter patter of tiny neurons
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.toolbear.io" # the base hostname & protocol for your site
+twitter_username: toolbear74
+github_username:  toolbear
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+# defaults
+defaults:
+- scope:
+    type: "posts"
+  values:
+    author: "toolbear"
+    excerpt_separator: <!--more-->
+    layout: "post"

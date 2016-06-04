@@ -1,0 +1,52 @@
+---
+title: Saving a reordered list
+date: 2005-04-16 20:56:12.000000000 -07:00
+type: post
+published: true
+status: publish
+tags:
+- CSS
+- DHTML
+---
+<p><strong>Update 05/11</strong>: version 0.2 of the <a href="http://tool-man.org/examples/">DHTML Library</a> has a helper function to "serialize" the order of a list:</p>
+<pre><code>ToolMan.junkdrawer().serializeList(myList)
+</code></pre>
+<p>It returns a string representation of the list as described in the remainder of this post.</p>
+<!--more-->
+<hr />
+<p>Tim Erfle and several others have asked a question like the following:</p>
+<blockquote>
+<p>Is there anyway to report the order of the list after it has been sorted by the user? Its a super cool script, but it would be helpful if store the user modified order in the database.</p>
+</blockquote>
+<p>Because the sorting is done by rearranging elements in the DOM, all you have to do is iterate over the parent element's children to extract the new order. For example:</p>
+<pre><code>function foo(listID) {
+    var list = document.getElementById(listID);
+    var items = list.getElementsByTagName("li");
+    var itemsString = "";
+    for (var i = 0; i &lt; items.length; i++) {
+        if (itemsString.length &gt; 0) itemsString += ":";
+        itemsString += items[i].innerHTML;
+    }
+    alert(itemsString);
+}
+</code></pre>
+<p>To use this in a form submit replace <code>alert(itemsString)</code> with something like <code>myHiddenInput.value = itemsString</code>. Or you could stuff <code>itemsString</code> in a cookie or pass it back to the server with <a href="http://developer.apple.com/internet/webcontent/xmlhttpreq.html">XMLHttpRequest</a>. The above example uses <code>items[i].innerHTML</code> which works fine so long as your list items are plain text. A better approach is to give each LI element a unique identifier. You can use the ID attribute or -- if you're not concerned about valid XHTML -- invent a new attribute to use. A list would look something like this:</p>
+<pre><code>&lt;ul&gt;
+    &lt;li listID="325"&gt;&lt;a href="..."&gt;Copper&lt;/a&gt;&lt;/li&gt;
+    &lt;li listID="27"&gt;&lt;a href="..."&gt;Gold&lt;/a&gt;&lt;/li&gt;
+    &lt;li listID="131"&gt;&lt;a href="..."&gt;Gold&lt;/a&gt;&lt;/li&gt;
+    ...
+&lt;/ul&gt;
+</code></pre>
+<p>And use a script like this to extract the order:</p>
+<pre><code>function foo(listID, formInput) {
+    var list = document.getElementById(listID);
+    var items = list.getElementsByTagName("li");
+    var itemIDs = "";
+    for (var i = 0; i &lt; items.length; i++) {
+        if (itemIDs.length &gt; 0) itemIDs += ":";
+        itemIDs += items[i].getAttribute("listID");
+    }
+    // do something with itemIDs
+}
+</code></pre>
