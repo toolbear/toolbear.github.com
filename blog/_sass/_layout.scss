@@ -182,6 +182,13 @@
     > li {
         margin-bottom: $spacing-unit;
     }
+    > li .post-link.more {
+      font-size: $small-font-size;
+      visibility: hidden;
+    }
+    > li:hover .post-link.more {
+      visibility: visible;
+    }
 }
 
 .post-meta {
